@@ -1,15 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package edu.unal.poo.calificador.vista;
 import java.util.Scanner;
-import edu.unal.poo.calificador.modelo.Autor;
-import edu.unal.poo.calificador.modelo.Libro;
+import edu.unal.poo.calificador.modelo.*;
+
 /**
  *
- * @author Estudiante
+ * @author Daniel
  */
 
 public class PruebaLibro {
@@ -19,7 +14,7 @@ public class PruebaLibro {
         String nombre= teclado.next();
         
         //Dependencia
-        Autor autor= new Autor(nombre,"Gir","245712");
+        Autor autor= new Autor(nombre,"Garcia","123456789");
         Libro libro = new Libro("Cien annios de Soledad",300);
         //asociando el libro con el autor
         libro.setAutor(autor);
